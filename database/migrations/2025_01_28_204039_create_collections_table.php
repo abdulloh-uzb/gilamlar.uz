@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('collections', function (Blueprint $table) {
             $table->id();
-            $table->string("name");
+            $table->string("name_uz");
+            $table->string("name_ru");
             $table->foreignId("category_id")->constrained()->cascadeOnDelete();
             $table->foreignId("country_id")->constrained()->cascadeOnDelete();
             $table->timestamps();
