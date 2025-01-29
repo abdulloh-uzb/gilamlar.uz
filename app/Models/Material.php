@@ -9,4 +9,7 @@ class Material extends Model
 {
     /** @use HasFactory<\Database\Factories\MaterialFactory> */
     use HasFactory;
+    public $timestamps = false;
+
+    protected $fillable = ["name_uz", "name_ru"];
 }
