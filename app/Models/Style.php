@@ -9,4 +9,6 @@ class Style extends Model
 {
     /** @use HasFactory<\Database\Factories\StyleFactory> */
     use HasFactory;
+    public $timestamps = false;
+
 }
