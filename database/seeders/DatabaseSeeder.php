@@ -14,7 +14,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             CategorySeeder::class,
             StyleSeeder::class,
-            MaterialSeeder::class
+            MaterialSeeder::class,
+            SizeSeeder::class
         ]);
     }
 }
