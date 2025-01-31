@@ -41,5 +41,21 @@ class ProductSeeder extends Seeder
         $product->variants()->save($variant);
         $variant->images()->save($image);
 
+        $variant = new ProductVariant([
+            "color_id" => 1,
+            "size_id" => 1,
+            "base_price" => 5.5,
+            "quantity" => 3
+        ]);
+
+        $image = new Image([
+            'path' => 'gilam2.jpg',
+            'mime_type' => 'image/jpeg',
+            'size' => 1024,
+        ]);
+        $product->variants()->save($variant);
+        $variant->images()->save($image);
+
+
     }
 }
