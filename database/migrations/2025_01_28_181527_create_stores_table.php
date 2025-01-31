@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('stores', function (Blueprint $table) {
             $table->id();
-            $table->foreignId("address_id")->constrained()->cascadeOnDelete();
             $table->time("open_time")->default("00:00:00")->nullable();
             $table->time("close_time")->default("00:00:00")->nullable();
             $table->string("phone_number")->nullable();

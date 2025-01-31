@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('sizes', function (Blueprint $table) {
             $table->id();
-            $table->enum("shape", ["rectangle", "circle"]);
+            $table->enum("shape", ["tortburchak", "dumaloq", "metrik"]);
             $table->unsignedSmallInteger("width")->nullable();
             $table->unsignedSmallInteger("height")->nullable();
             $table->unsignedSmallInteger("diametr")->nullable();

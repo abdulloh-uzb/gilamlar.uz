@@ -18,7 +18,6 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('phone_number')->unique();
             $table->enum("role", ["owner", "customer"]);
-            $table->foreignId("address_id")->constrained()->cascadeOnDelete();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
