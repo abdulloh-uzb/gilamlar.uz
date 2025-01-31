@@ -9,4 +9,10 @@ class Country extends Model
 {
     /** @use HasFactory<\Database\Factories\CountryFactory> */
     use HasFactory;
+    public $timestamps = false;
+    
+    protected $fillable = [
+        "name_uz",
+        "name_ru"
+    ];
 }
