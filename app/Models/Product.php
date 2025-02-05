@@ -12,7 +12,7 @@ class Product extends Model
     /** @use HasFactory<\Database\Factories\ProductFactory> */
     use HasFactory;
 
-    protected $fillable = ["title", "description", "collection_id", "pile_height", ""];
+    protected $fillable = ["title", "description", "collection_id", "pile_height", "material_id", "style_id"];
 
     public function variants(): HasMany
     {

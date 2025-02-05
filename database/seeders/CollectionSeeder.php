@@ -23,8 +23,6 @@ class CollectionSeeder extends Seeder
         );
         $image = new Image([
             'path' => 'https://picsum.photos/640/480',
-            'mime_type' => 'image/jpeg',
-            'size' => 5432,
         ]);
         $collection->image()->save($image);
 
@@ -37,8 +35,6 @@ class CollectionSeeder extends Seeder
         );
         $image = new Image([
             'path' => 'https://picsum.photos/800/400',
-            'mime_type' => 'image/jpeg',
-            'size' => 5432,
         ]);
         $collection->image()->save($image);
 
@@ -52,8 +48,6 @@ class CollectionSeeder extends Seeder
 
          $image = new Image([
             'path' => 'https://picsum.photos/400/400',
-            'mime_type' => 'image/jpeg',
-            'size' => 5432,
         ]);
         $collection->image()->save($image);
 

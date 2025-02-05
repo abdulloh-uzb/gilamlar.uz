@@ -11,7 +11,7 @@ class Image extends Model
     /** @use HasFactory<\Database\Factories\ImageFactory> */
     use HasFactory;
 
-    protected $fillable = ["path", "mime_type", "size", "imageable_id", "imageable_type"];
+    protected $fillable = ["path", "imageable_id", "imageable_type"];
 
     public function imageable(): MorphTo
     {

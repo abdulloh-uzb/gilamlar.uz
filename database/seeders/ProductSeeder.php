@@ -35,8 +35,6 @@ class ProductSeeder extends Seeder
 
         $image = new Image([
             'path' => 'gilam1.jpg',
-            'mime_type' => 'image/jpeg',
-            'size' => 1024,
         ]);
         $product->variants()->save($variant);
         $variant->images()->save($image);
@@ -50,8 +48,6 @@ class ProductSeeder extends Seeder
 
         $image = new Image([
             'path' => 'gilam2.jpg',
-            'mime_type' => 'image/jpeg',
-            'size' => 1024,
         ]);
         $product->variants()->save($variant);
         $variant->images()->save($image);

@@ -26,9 +26,6 @@ class StoreProductRequest extends FormRequest
             "product_variants.*.size_id" => "required|exists:sizes,id",
             "product_variants.*.base_price" => "required",
             "product_variants.*.quantity" => "required",
-            "product_variants.*.images" => "required|array",
-            "product_variants.*.images.*" => "required|file|image|mimes:png,jpg,jpeg|max:2048"
-
         ];
     }
 }
